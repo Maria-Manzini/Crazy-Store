@@ -9,35 +9,98 @@
 </head>
 <body>
 
-  <h1>Checkout</h1>
+  <!--  header -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1>The Crazy Store</h1>
+      </div>
 
-  <section id="checkout-cart">
-    <h2>Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
-  </section>
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link"><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link active"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
 
-  <form id="checkout-form">
-    <label>
-      Full Name
-      <input type="text" name="name" required />
-    </label>
-    <label>
-      Email Address
-      <input type="email" name="email" required />
-    </label>
-    <label>
-      Delivery Address
-      <textarea name="address" rows="4" required></textarea>
-    </label>
-    <button type="submit">Place Order</button>
-  </form>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+  </header>
 
-  <div id="confirmation">
-    <h3>Thank you! 🎉</h3>
-    <p>Your order has been placed successfully.</p>
-  </div>
+  <!--  main checkout content -->
+  <main>
+    <h1>Checkout</h1>
 
-  <script src="script.js"></script>
+    <section id="checkout-cart">
+      <h2>Your Cart</h2>
+      <ul id="checkout-items"></ul> 
+      <p><strong>Total: R<span id="checkout-total">0.00</span></strong></p>
+    </section>
+
+    <form id="checkout-form">
+      <label>
+        Full Name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email Address
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Delivery Address
+        <textarea name="address" rows="4" required></textarea>
+      </label>
+      <button type="submit">Place Order</button>
+    </form>
+
+    <div id="confirmation" style="display: none;">
+      <h3>Thank you! 🎉</h3>
+      <p>Your order has been placed successfully.</p>
+    </div>
+  </main>
+
+  <!--  script must load the cart and handle checkout -->
+  <script>
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function updateCartDisplay() {
+      const list = document.getElementById('checkout-items');
+      const totalEl = document.getElementById('checkout-total');
+      list.innerHTML = '';
+      let total = 0;
+
+      cart.forEach(item => {
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+
+        const li = document.createElement('li');
+        li.textContent = `${item.name} (x${item.quantity}) - R${itemTotal.toFixed(2)}`;
+        list.appendChild(li);
+      });
+
+      totalEl.textContent = total.toFixed(2);
+    }
+
+    updateCartDisplay();
+
+    document.getElementById('checkout-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // send data to server here
+
+      // Clear cart
+      localStorage.removeItem('cart');
+      document.getElementById('checkout-form').style.display = 'none';
+      document.getElementById('checkout-cart').style.display = 'none';
+      document.getElementById('confirmation').style.display = 'block';
+    });
+  </script>
+
 </body>
 </html>
