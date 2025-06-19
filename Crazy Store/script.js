@@ -160,4 +160,59 @@ document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
     triggerCartUpdate();
   });
 });
- 
+
+// Remove redeclaration of cart here, since it's already declared above.
+// If you want to persist cart in localStorage, update the cart array and save it after changes:
+function saveCartToStorage() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Call saveCartToStorage() after modifying the cart
+document.querySelectorAll('.add-to-cart-btn').forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    // ...existing add-to-cart logic...
+    saveCartToStorage();
+  });
+});
+
+// On page load, load cart from storage if available
+document.addEventListener('DOMContentLoaded', () => {
+  const storedCart = JSON.parse(localStorage.getItem('cart'));
+  if (storedCart && Array.isArray(storedCart)) {
+    cart.length = 0;
+    cart.push(...storedCart);
+    updateCartSummary();
+    updateCartDisplay();
+    showCartSummary();
+  }
+});
+
+function updateCartDisplay() {
+  const list = document.getElementById('cart-items');
+  const totalEl = document.getElementById('cart-total');
+  list.innerHTML = '';
+  let total = 0;
+
+  cart.forEach(item => {
+    const itemTotal = item.price * item.quantity;
+    total += itemTotal;
+
+    const li = document.createElement('li');
+    li.textContent = `${item.name} (x${item.quantity}) - R${itemTotal.toFixed(2)}`;
+    list.appendChild(li);
+  });
+
+  totalEl.textContent = total.toFixed(2);
+}
+
+updateCartDisplay();
+
+document.getElementById('checkout-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // Simulated checkout
+  localStorage.removeItem('cart');
+  document.getElementById('checkout-form').style.display = 'none';
+  document.getElementById('checkout-cart').style.display = 'none';
+  document.getElementById('confirmation').style.display = 'block';
+});

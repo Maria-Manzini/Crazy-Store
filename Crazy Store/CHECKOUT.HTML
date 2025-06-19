@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout - The Crazy Store</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Checkout</h1>
+
+  <section id="checkout-cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+  </section>
+
+  <form id="checkout-form">
+    <label>
+      Full Name
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      Email Address
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      Delivery Address
+      <textarea name="address" rows="4" required></textarea>
+    </label>
+    <button type="submit">Place Order</button>
+  </form>
+
+  <div id="confirmation">
+    <h3>Thank you! 🎉</h3>
+    <p>Your order has been placed successfully.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
