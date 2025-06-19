@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Crazy Store - Home</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1>The Crazy Store</h1>
+      </div>
+
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link "><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link active"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+
+    <section id="cart-summary">
+      <h2>Cart Summary</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+  </header>
+
+<main>
+  <section class="store-intro">
+    <p>
+      Welcome to our online store where you can now place your orders and have them processed
+      and packaged for collection at your nearby store at our new collection counter.
+    </p>
+    <p>
+      We accept various payment methods for online purchases through our secure online
+      payment system. You can use your card, opt to pay during collection in-store,
+      or deposit cash using your order number as reference and present proof of payment during collection.
+    </p>
+
+    <a href="products .html" class="shop-link"><button>Click here to start shopping</button></a>
+  </section>
+</main>
+
+
+    <div class="moving-background"></div>
+  </main>
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 The Crazy Store. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

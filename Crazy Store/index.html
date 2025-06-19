@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Crazy Store - Home</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1>The Crazy Store</h1>
+      </div>
+
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link active"><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+    <section id="cart-summary">
+  <h2>Cart Summary</h2>
+  <ul id="cart-items"></ul>
+  <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+</section>
+
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h2>Unleash Your Crazy Side</h2>
+        <p>Unique products that spark joy and creativity — only at The Crazy Store.</p>
+        <a href="products .html" class="btn hero-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features container">
+      <div class="feature">
+        <i class='bx bx-truck'></i>
+        <h3>Fast & Free Delivery</h3>
+        <p>Get your products delivered quickly and for free on orders over R500.</p>
+      </div>
+      <div class="feature">
+        <i class='bx bx-credit-card'></i>
+        <h3>Secure Payment</h3>
+        <p>We use trusted payment gateways to keep your data safe.</p>
+      </div>
+      <div class="feature">
+        <i class='bx bx-refresh'></i>
+        <h3>Easy Returns</h3>
+        <p>Not happy? Return your product within 30 days hassle-free.</p>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials container">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial-cards">
+        <blockquote class="testimonial-card">
+          <p>"Amazing variety and fast delivery! I love the quirky products."</p>
+          <cite>— Lerato M.</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"Great customer service and secure checkout process. Highly recommend."</p>
+          <cite>— Sipho D.</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>"My kids love the activity books I bought here. Quality is top-notch."</p>
+          <cite>— Nomsa K.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="product-grid container">
+      <h2>Featured Products</h2>
+
+      <article class="product-card">
+        <img src="images/activity book.webp" alt="Activity Book" />
+        <h3>Activity Book</h3>
+        <p>A book full of activities for kids to do</p>
+        <span class="price">R25.00</span>
+        <div class="quantity">
+          <label for="quantity-1">Quantity</label>
+          <input type="number" id="quantity-1" class="quantity-input" value="1" min="1" />
+        </div>
+        <button class="btn add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/gummy ducks.webp" alt="Gummy Ducks" />
+        <h3>Gummy Ducks</h3>
+        <p>A tasty party snack</p>
+        <span class="price">R55.00</span>
+        <div class="quantity">
+          <label for="quantity-2">Quantity</label>
+          <input type="number" id="quantity-2" class="quantity-input" value="1" min="1" />
+        </div>
+        <button class="btn add-to-cart-btn">Add to Cart</button>
+      </article>
+
+      <article class="product-card">
+        <img src="images/alarm clock.webp" alt="Alarm Clock" />
+        <h3>Alarm Clock</h3>
+        <p>Keep track of your time</p>
+        <span class="price">R60.99</span>
+        <div class="quantity">
+          <label for="quantity-3">Quantity</label>
+          <input type="number" id="quantity-3" class="quantity-input" value="1" min="1" />
+        </div>
+        <button class="btn add-to-cart-btn">Add to Cart</button>
+      </article>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter container">
+      <h2>Stay in the Loop</h2>
+      <p>Subscribe to our newsletter for the latest deals and updates.</p>
+      <form id="newsletter-form" action="#" method="post" novalidate>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <p id="form-message" role="alert" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 The Crazy Store. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

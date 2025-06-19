@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Crazy Store - Home</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1>The Crazy Store</h1>
+      </div>
+
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link"><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link active"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+
+    <section id="cart-summary">
+      <h2>Cart Summary</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+  </header>
+
+  <main class="product-catalogue">
+    <h1 class="main">Product Catalogue</h1>
+
+    <section class="product-categories">
+      <h2>Browse by Category</h2>
+      <ul class="category-list">
+        <li><a href="books.html" class="category-btn"><i class='bx bxs-book'></i> Books</a></li>
+        <li><a href="crazy pet finds.html" class="category-btn"><i class='bx bxs-dog'></i> Crazy Pet Finds</a></li>
+        <li><a href="household must haves.html" class="category-btn"><i class='bx bxs-home'></i> Household Must Haves</a></li>
+        <li><a href="party.html" class="category-btn"><i class='bx bxs-party'></i> Party</a></li>
+      </ul>
+    </section>
+
+     <main class="product-grid">
+
+    <div class="product-card">
+      <img src="images/SOUR GUMMY STICKS.webp" alt="Sour Gummy Sticks" />
+      <h2>Gummy Sticks</h2>
+      <p>A tasty party snack</p>
+      <span class="price">R55,00</span>
+      <div class="quantity">
+        <label for="quantity-1"><b>Quantity</b></label>
+        <input type="number" id="quantity-1" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/PIRATECOSTUME.webp" alt="Pirate Costumes" />
+      <h2>Pirate Costumes (2)</h2>
+      <p>Let the kids go on a pirate adventure</p>
+      <span class="price">R110,00</span>
+      <div class="quantity">
+        <label for="quantity-2"><b>Quantity</b></label>
+        <input type="number" id="quantity-2" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+     <article class="product-card">
+      <img src="images/KIDS AFR BIBLE.webp" alt="Kids African Bible" />
+      <h3>Kids African Bible</h3>
+      <p>Simple language and visuals for better understanding.</p>
+      <span class="price">R55.00</span>
+      <div class="quantity">
+        <label for="q3"><b>Quantity</b></label>
+        <input type="number" id="q3" name="q3" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/OSTRICH BOOK.webp" alt="Ostrich Book" />
+      <h3>Ostrich Book</h3>
+      <p>Learn all about ostriches in this colorful book.</p>
+      <span class="price">R123.00</span>
+      <div class="quantity">
+        <label for="q4"><b>Quantity</b></label>
+        <input type="number" id="q4" name="q4" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+    <article class="product-card">
+      <img src="images/dog board book.webp" alt="Dog Book" />
+      <h3>Dog Book</h3>
+      <p>Entertaining content for dog lovers of all ages.</p>
+      <span class="price">R79.00</span>
+      <div class="quantity">
+        <label for="q5"><b>Quantity</b></label>
+        <input type="number" id="q5" name="q5" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+    <article class="product-card">
+      <img src="images/CUSSLER NOVELS.webp" alt="Cussler Novels" />
+      <h3>Cussler Novels</h3>
+      <p>Pick any thrilling adventure from the Cussler collection.</p>
+      <span class="price">R75.00</span>
+      <div class="quantity">
+        <label for="q6"><b>Quantity</b></label>
+        <input type="number" id="q6" name="q6" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+    <article class="product-card">
+      <img src="images/ALARM CLOCK.webp" alt="Alarm Clock" width="200" height="150" />
+      <h2>alarm clock</h2>
+      <p>keep track of your time</p>
+      <span class="price">R60,99</span>
+      <div class="quantity">
+        <label for="quantity1"><b>quantity</b></label>
+        <input type="number" id="quantity1" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/RUGS.webp" alt="Rugs" width="200" height="150" />
+      <h2>rugs</h2>
+      <p>fluffy and warm rugs, perfect for the living room</p>
+      <span class="price">R199,99</span>
+      <div class="quantity">
+        <label for="quantity2"><b>quantity</b></label>
+        <input type="number" id="quantity2" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 The Crazy Store. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

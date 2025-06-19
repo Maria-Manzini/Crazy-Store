@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Crazy Store - Products</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1><b><i><u>The Crazy Store</u></i></b></h1>
+      </div>
+      <p class="subtitle"><b>Find the most fun and unique stuff... pssst... You never know what you can find.</b></p>
+
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link"><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link active"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+
+    <section id="cart-summary">
+      <h2>Cart Summary</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+  </header>
+
+  <main class="product-grid">
+
+    <div class="product-card">
+      <img src="images/SOUR GUMMY STICKS.webp" alt="Sour Gummy Sticks" />
+      <h2>Gummy Sticks</h2>
+      <p>A tasty party snack</p>
+      <span class="price">R55,00</span>
+      <div class="quantity">
+        <label for="quantity-1"><b>Quantity</b></label>
+        <input type="number" id="quantity-1" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/PIRATECOSTUME.webp" alt="Pirate Costumes" />
+      <h2>Pirate Costumes (2)</h2>
+      <p>Let the kids go on a pirate adventure</p>
+      <span class="price">R110,00</span>
+      <div class="quantity">
+        <label for="quantity-2"><b>Quantity</b></label>
+        <input type="number" id="quantity-2" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/CHILDS CAPE.webp" alt="Children's Capes" />
+      <h2>Children's Capes</h2>
+      <p>Playtime assorted capes</p>
+      <span class="price">R45,95</span>
+      <div class="quantity">
+        <label for="quantity-3"><b>Quantity</b></label>
+        <input type="number" id="quantity-3" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/HOT WHEELZ CARS.webp" alt="Hot Wheelz Cars" />
+      <h2>Hotwheel Cars</h2>
+      <p>The latest edition of Hotwheelz cars</p>
+      <span class="price">R200,09</span>
+      <div class="quantity">
+        <label for="quantity-4"><b>Quantity</b></label>
+        <input type="number" id="quantity-4" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/BUBBLE SOLUTION.webp" alt="Bubble Solution" />
+      <h2>Bubble Solution</h2>
+      <p>A bubble bath solution</p>
+      <span class="price">R55,91</span>
+      <div class="quantity">
+        <label for="quantity-5"><b>Quantity</b></label>
+        <input type="number" id="quantity-5" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/BALOON BOUQUET.webp" alt="Balloon Bouquet" />
+      <h2>Balloon Bouquet</h2>
+      <p>A bouquet of balloons</p>
+      <span class="price">R79,99</span>
+      <div class="quantity">
+        <label for="quantity-6"><b>Quantity</b></label>
+        <input type="number" id="quantity-6" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/GUMMY DUCKS.webp" alt="Gummy Ducks" />
+      <h2>Gummy Ducks</h2>
+      <p>Some sweet delights</p>
+      <span class="price">R25,00</span>
+      <div class="quantity">
+        <label for="quantity-7"><b>Quantity</b></label>
+        <input type="number" id="quantity-7" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/DRESS HAT.webp" alt="Dress Hat" />
+      <h2>Dress Hat</h2>
+      <p>Assorted dress hats</p>
+      <span class="price">R89,99</span>
+      <div class="quantity">
+        <label for="quantity-8"><b>Quantity</b></label>
+        <input type="number" id="quantity-8" value="1" min="1"/>
+      </div>
+      <button>Add to Cart</button>
+    </div>
+
+    <div class="moving-background"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Crazy Store. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-twitter'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+    </div>
+  </footer>
+</body>
+</html>

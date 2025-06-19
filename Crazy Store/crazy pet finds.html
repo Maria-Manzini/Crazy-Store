@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Crazy Store - Home</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1>The Crazy Store</h1>
+      </div>
+
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link"><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link active"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+
+     <section id="cart-summary">
+  <h2>Cart Summary</h2>
+  <ul id="cart-items"></ul>
+  <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+</section>
+  </header>
+
+  <main class="product-grid">
+    <article class="product-card">
+      <img src="images/spikey toyball.webp" alt="Spikey Toyball" width="200" height="150" />
+      <h3>Spikey Toyball</h3>
+      <p>A toy to keep your pet entertained.</p>
+      <span class="price">R25.00</span>
+      <div class="quantity">
+        <label for="quantity1"><b>Quantity</b></label>
+        <input type="number" id="quantity1" name="quantity1" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/dog treats.webp" alt="Dog Treats" width="200" height="150" />
+      <h3>Dog Treats</h3>
+      <p>Tasty treats to keep your dog happy.</p>
+      <span class="price">R50.00</span>
+      <div class="quantity">
+        <label for="quantity2"><b>Quantity</b></label>
+        <input type="number" id="quantity2" name="quantity2" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/dog biscuits.webp" alt="Dog Biscuits" width="200" height="150" />
+      <h3>Dog Biscuits</h3>
+      <p>Tasty and healthy biscuits for your dog's tummy.</p>
+      <span class="price">R49.99</span>
+      <div class="quantity">
+        <label for="quantity3"><b>Quantity</b></label>
+        <input type="number" id="quantity3" name="quantity3" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/dog and cat house.webp" alt="Dog and Cat House" width="200" height="150" />
+      <h3>Dog and Cat House</h3>
+      <p>A movable house for your pets.</p>
+      <span class="price">R120.00</span>
+      <div class="quantity">
+        <label for="quantity4"><b>Quantity</b></label>
+        <input type="number" id="quantity4" name="quantity4" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/dog shampoo.webp" alt="Dog Shampoo" width="200" height="150" />
+      <h3>Dog Shampoo</h3>
+      <p>A scented shampoo that will leave your dog smelling fresh.</p>
+      <span class="price">R75.00</span>
+      <div class="quantity">
+        <label for="quantity5"><b>Quantity</b></label>
+        <input type="number" id="quantity5" name="quantity5" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/dog deodrant.webp" alt="Dog Deodorant" width="200" height="150" />
+      <h3>Dog Deodorant</h3>
+      <p>A deodorant to keep your dog smelling fresh.</p>
+      <span class="price">R89.99</span>
+      <div class="quantity">
+        <label for="quantity6"><b>Quantity</b></label>
+        <input type="number" id="quantity6" name="quantity6" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/cat scratchpad.webp" alt="Cat Scratch Pad" width="200" height="150" />
+      <h3>Cat Scratch Pad</h3>
+      <p>A cute scratch pad that doesn’t quickly get worn out.</p>
+      <span class="price">R179.00</span>
+      <div class="quantity">
+        <label for="quantity7"><b>Quantity</b></label>
+        <input type="number" id="quantity7" name="quantity7" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/cat collar.webp" alt="Cat Collar" width="200" height="150" />
+      <h3>Cat Collar</h3>
+      <p>A customized cat collar.</p>
+      <span class="price">R80.00</span>
+      <div class="quantity">
+        <label for="quantity8"><b>Quantity</b></label>
+        <input type="number" id="quantity8" name="quantity8" value="1" min="1" />
+      </div>
+      <button type="button" class="add-to-cart-btn">Add to Cart</button>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Crazy Store. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-twitter'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

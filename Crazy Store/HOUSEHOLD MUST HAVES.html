@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Crazy Store - Home</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1>The Crazy Store</h1>
+      </div>
+
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link"><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link active"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+    <section id="cart-summary">
+      <h2>Cart Summary</h2>
+      <ul id="cart-items"></ul>
+      <p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+  </header>
+
+  <main class="product-grid">
+    <article class="product-card">
+      <img src="images/ALARM CLOCK.webp" alt="Alarm Clock" width="200" height="150" />
+      <h2>alarm clock</h2>
+      <p>keep track of your time</p>
+      <span class="price">R60,99</span>
+      <div class="quantity">
+        <label for="quantity1"><b>quantity</b></label>
+        <input type="number" id="quantity1" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/RUGS.webp" alt="Rugs" width="200" height="150" />
+      <h2>rugs</h2>
+      <p>fluffy and warm rugs, perfect for the living room</p>
+      <span class="price">R199,99</span>
+      <div class="quantity">
+        <label for="quantity2"><b>quantity</b></label>
+        <input type="number" id="quantity2" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/PLASTIC STORAGE.webp" alt="Plastic Storage" width="200" height="150" />
+      <h2>plastic storages</h2>
+      <p>ideal for food or small appliances</p>
+      <span class="price">R35,89</span>
+      <div class="quantity">
+        <label for="quantity3"><b>quantity</b></label>
+        <input type="number" id="quantity3" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/DISPENCER.webp" alt="Dispenser" width="200" height="150" />
+      <h2>dispenser</h2>
+      <p>perfect for water or your favorite drinks</p>
+      <span class="price">R200,00</span>
+      <div class="quantity">
+        <label for="quantity4"><b>quantity</b></label>
+        <input type="number" id="quantity4" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/DISH BRUSH.webp" alt="Dish Brush" width="200" height="150" />
+      <h2>dish brush</h2>
+      <p>used to clean and scrub utensils</p>
+      <span class="price">R29,99</span>
+      <div class="quantity">
+        <label for="quantity5"><b>quantity</b></label>
+        <input type="number" id="quantity5" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/CUPCAKE CASES.webp" alt="Cupcake Cases" width="200" height="150" />
+      <h2>cupcake cases</h2>
+      <p>oven-safe and reusable</p>
+      <span class="price">R60,00</span>
+      <div class="quantity">
+        <label for="quantity6"><b>quantity</b></label>
+        <input type="number" id="quantity6" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/ALPHABET KEY CHAIN.webp" alt="Alphabet Keychain" width="200" height="150" />
+      <h2>key chain</h2>
+      <p>alphabet keychains available from A-Z</p>
+      <span class="price">R30,00</span>
+      <div class="quantity">
+        <label for="quantity7"><b>quantity</b></label>
+        <input type="number" id="quantity7" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card">
+      <img src="images/CLEANING CLOTH.webp" alt="Cleaning Cloth" width="200" height="150" />
+      <h2>cleaning cloth</h2>
+      <p>soft cloth for cleaning surfaces</p>
+      <span class="price">R100,00</span>
+      <div class="quantity">
+        <label for="quantity8"><b>quantity</b></label>
+        <input type="number" id="quantity8" value="1" min="1" />
+      </div>
+      <button class="add-to-cart-btn">Add to Cart</button>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Crazy Store. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#"><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-twitter'></i></a>
+      <a href="#"><i class='bx bxl-instagram'></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

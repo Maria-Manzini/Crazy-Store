@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Crazy Store - Home</title>
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="The Crazy Store Logo" class="logo-img" />
+        <h1>The Crazy Store</h1>
+      </div>
+
+      <nav class="nav" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" class="nav-link "><i class='bx bx-home'></i> Home</a></li>
+          <li><a href="about us.html" class="nav-link"><i class='bx bx-info-circle'></i> About Us</a></li>
+          <li><a href="contact us.html" class="nav-link active"><i class='bx bx-envelope'></i> Contact Us</a></li>
+          <li><a href="products .html" class="nav-link"><i class='bx bx-store'></i> Products</a></li>
+          <li><a href="online store.html" class="nav-link"><i class='bx bx-cart'></i> Online Shopping</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class='bx bx-menu'></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="contact-container" role="main">
+    <h1 class="main">Contact Us</h1>
+
+    <section>
+      <h2>Address</h2>
+      <p>15-17 Packer Avenue, Epping Industria, Cape Town, Western Cape, South Africa, 7460 (Head Office)</p>
+    </section>
+
+    <section>
+      <h2>Telephone</h2>
+      <p><a href="tel:+27861111281">+27 (0)86 111 1281</a></p>
+    </section>
+
+    <section>
+      <h2>Email</h2>
+      <p><a href="mailto:info@crazystore.co.za">info@crazystore.co.za</a></p>
+    </section>
+
+<section>
+  <h2>Send Us a Message</h2>
+  <form id="contact-form" novalidate>
+    <label for="name">Name<span aria-hidden="true">*</span></label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="contact-email">Email<span aria-hidden="true">*</span></label>
+    <input type="email" id="contact-email" name="email" placeholder="you@example.com" required />
+
+    <label for="message">Message<span aria-hidden="true">*</span></label>
+    <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+
+    <button type="submit" class="btn-submit">Send Message</button>
+  </form>
+
+  <p id="form-message" aria-live="polite" role="alert" style="margin-top: 1rem;"></p>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 The Crazy Store. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
